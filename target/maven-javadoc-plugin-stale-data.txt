@@ -3,27 +3,27 @@
 @options
 @packages
 -classpath
-'C:/Users/pedro/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar;C:/Users/pedro/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-media/21.0.5/javafx-media-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-media/21.0.5/javafx-media-21.0.5-win.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-fxml/21.0.5/javafx-fxml-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-fxml/21.0.5/javafx-fxml-21.0.5-win.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-graphics/21.0.5/javafx-graphics-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-graphics/21.0.5/javafx-graphics-21.0.5-win.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-controls/21.0.5/javafx-controls-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-controls/21.0.5/javafx-controls-21.0.5-win.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-base/21.0.5/javafx-base-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-base/21.0.5/javafx-base-21.0.5-win.jar'
+'C:/Users/pedro/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar;C:/Users/pedro/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar;C:/Users/pedro/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-media/21.0.5/javafx-media-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-media/21.0.5/javafx-media-21.0.5-win.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-fxml/21.0.5/javafx-fxml-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-fxml/21.0.5/javafx-fxml-21.0.5-win.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-graphics/21.0.5/javafx-graphics-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-graphics/21.0.5/javafx-graphics-21.0.5-win.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-controls/21.0.5/javafx-controls-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-controls/21.0.5/javafx-controls-21.0.5-win.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-base/21.0.5/javafx-base-21.0.5.jar;C:/Users/pedro/.m2/repository/org/openjfx/javafx-base/21.0.5/javafx-base-21.0.5-win.jar'
 -encoding
 'UTF-8'
--protected
+-public
 -source
 '8'
 -sourcepath
-'C:/VsCodeProyects/THECASINUSPROYECT/src/main/java;C:/VsCodeProyects/THECASINUSPROYECT/target/generated-sources/annotations'
+'C:/GitHub/THE-CASINUS-PROYECT/src/main/java;C:/GitHub/THE-CASINUS-PROYECT/target/generated-sources/annotations'
 -author
 -bottom
 'Copyright &#169; 2025. All rights reserved.'
 -charset
 'UTF-8'
 -d
-'C:/VsCodeProyects/THECASINUSPROYECT/target/reports/apidocs'
+'C:/GitHub/THE-CASINUS-PROYECT/target/site/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
 'THE-CASINUS-PROYECT 0.0.1-SNAPSHOT API'
 -linkoffline
-'https://docs.oracle.com/javase/8/docs/api' 'C:/VsCodeProyects/THECASINUSPROYECT/target/javadoc-bundle-options'
+'https://docs.oracle.com/javase/8/docs/api' 'C:/GitHub/THE-CASINUS-PROYECT/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
@@ -35,6 +35,7 @@ com.casino.Modelo
 com.casino.Vista
 C:\Users\pedro\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar = 1736292535603
 C:\Users\pedro\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar = 1736292535755
+C:\Users\pedro\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar = 1733699792797
 C:\Users\pedro\.m2\repository\org\openjfx\javafx-media\21.0.5\javafx-media-21.0.5.jar = 1735693227826
 C:\Users\pedro\.m2\repository\org\openjfx\javafx-media\21.0.5\javafx-media-21.0.5-win.jar = 1735693228060
 C:\Users\pedro\.m2\repository\org\openjfx\javafx-fxml\21.0.5\javafx-fxml-21.0.5.jar = 1733849703060
@@ -45,22 +46,22 @@ C:\Users\pedro\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls
 C:\Users\pedro\.m2\repository\org\openjfx\javafx-controls\21.0.5\javafx-controls-21.0.5-win.jar = 1733849703500
 C:\Users\pedro\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5.jar = 1733849703143
 C:\Users\pedro\.m2\repository\org\openjfx\javafx-base\21.0.5\javafx-base-21.0.5-win.jar = 1733849703344
-C:\VsCodeProyects\THECASINUSPROYECT\src\main\java = 1735685660079
-C:\VsCodeProyects\THECASINUSPROYECT\target\generated-sources\annotations = 1738525185787
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\allclasses-index.html = 1738525189899
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\allpackages-index.html = 1738525189901
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\element-list = 1738525189759
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\help-doc.html = 1738525189950
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\index-all.html = 1738525189922
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\index.html = 1738525189883
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\jquery-ui.overrides.css = 1738525189960
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\member-search-index.js = 1738525189905
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\module-search-index.js = 1738525189903
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\overview-summary.html = 1738525189946
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\overview-tree.html = 1738525189880
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\package-search-index.js = 1738525189904
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\script.js = 1738525189953
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\search.js = 1738525189954
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\stylesheet.css = 1738525189952
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\tag-search-index.js = 1738525189906
-C:\VsCodeProyects\THECASINUSPROYECT\target\reports\apidocs\type-search-index.js = 1738525189904
+C:\GitHub\THE-CASINUS-PROYECT\src\main\java = 1738525402566
+C:\GitHub\THE-CASINUS-PROYECT\target\generated-sources\annotations = 1738530183726
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\allclasses-index.html = 1738530196292
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\allpackages-index.html = 1738530196295
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\element-list = 1738530196170
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\help-doc.html = 1738530196324
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\index-all.html = 1738530196319
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\index.html = 1738530196270
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\jquery-ui.overrides.css = 1738530196356
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\member-search-index.js = 1738530196299
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\module-search-index.js = 1738530196297
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\overview-summary.html = 1738530196321
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\overview-tree.html = 1738530196267
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\package-search-index.js = 1738530196298
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\script.js = 1738530196328
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\search.js = 1738530196329
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\stylesheet.css = 1738530196327
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\tag-search-index.js = 1738530196301
+C:\GitHub\THE-CASINUS-PROYECT\target\site\apidocs\type-search-index.js = 1738530196299
