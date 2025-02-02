@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="panePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" styleClass="pane-derecho" stylesheets="@../css/TemaInicio.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.casino.Controlador.InGameController">
+   <children>
+      <AnchorPane fx:id="configuracionPerfil" layoutX="167.0" layoutY="56.0" prefHeight="644.0" prefWidth="1132.0">
+         <children>
+            <GridPane hgap="10.0" prefHeight="529.0" prefWidth="496.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="156.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="169.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="169.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label style="-fx-text-fill: grey;" styleClass="labelInformacionUsuario" text="INFORMACION CUENTA" />
+                  <Label styleClass="labelInformacionUsuario" text="USUARIO:" GridPane.rowIndex="1" />
+                  <Label styleClass="labelInformacionUsuario" text="FICHAS:" GridPane.rowIndex="2" />
+                  <Label style="-fx-text-fill: grey;" styleClass="labelInformacionUsuario" text="CAMBIAR USUARIO" GridPane.rowIndex="3" />
+                  <Label fx:id="usuarioInformacion" styleClass="labelInformacionUsuario" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="fichasInformacion" styleClass="labelInformacionUsuario" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label styleClass="labelInformacionUsuario" text="NUEVO USUARIO:" GridPane.rowIndex="4" />
+                  <Label styleClass="labelInformacionUsuario" text="CONTRASEÑA:" GridPane.rowIndex="5" />
+                  <Label style="-fx-text-fill: grey;" styleClass="labelInformacionUsuario" text="CAMBIAR CONTRASEÑA" GridPane.rowIndex="6" />
+                  <Label styleClass="labelInformacionUsuario" text="CONTRASEÑA ACTUAL:" GridPane.rowIndex="7" />
+                  <Label styleClass="labelInformacionUsuario" text="NUEVA CONTRASEÑA:" GridPane.rowIndex="8" />
+                  <TextField fx:id="nuevoUsuario" styleClass="textfield_login" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="claveInformacion" styleClass="textfield_login" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="claveActualInformacion" styleClass="textfield_login" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="nuevaClave" styleClass="textfield_login" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label fx:id="errorNuevoUsuario" style="-fx-text-fill: red;" styleClass="labelInformacionUsuario" text="USUARIO EXISTENTE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label fx:id="errorClave" style="-fx-text-fill: red;" styleClass="labelInformacionUsuario" text="CONTRASEÑA INCORRECTA" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label fx:id="errorClaveActual" layoutX="346.0" layoutY="245.0" style="-fx-text-fill: red;" styleClass="labelInformacionUsuario" text="CONTRASEÑA INCORRECTA" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Label fx:id="errorClaves" style="-fx-text-fill: red;" styleClass="labelInformacionUsuario" text="CONTRASEÑAS NO COINCIDEN" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <Label styleClass="labelInformacionUsuario" text="REPETIR CONTRASEÑA:" GridPane.rowIndex="9" />
+                  <TextField fx:id="repetirNuevaClave" styleClass="textfield_login" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Hyperlink fx:id="aplicarCambios" onAction="#aplicarCambios" text="APLICAR CAMBIOS" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label fx:id="verificacionCambios" style="-fx-text-fill: green;" styleClass="labelInformacionUsuario" text="CAMBIOS APLICADOS CORRECTAMENTE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+                  <Hyperlink fx:id="logOut" onAction="#logOut" text="LOG OUT" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label fx:id="errorVacio" style="-fx-text-fill: red;" styleClass="labelInformacionUsuario" text="CAMPOS REQUERIDOS" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+                  <Label fx:id="errorPatron" style="-fx-text-fill: red;" styleClass="labelInformacionUsuario" text="USUARIO O CONTRASEÑA INVALIDOS" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelRuleta" layoutX="168.0" layoutY="56.0" prefHeight="644.0" prefWidth="1132.0">
+         <children>
+            <Circle fx:id="punteroRuleta" layoutX="566.0" layoutY="106.0" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.40789473056793213" green="0.40789473056793213" blue="0.40789473056793213" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <ProgressBar fx:id="barraProgreso" layoutX="225.0" layoutY="30.0" prefHeight="30.0" prefWidth="683.0" progress="0.0" />
+            <Circle layoutX="566.0" layoutY="590.0" radius="34.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9966442953020134">
+                           <color>
+                              <Color red="0.7105262875556946" green="0.7105262875556946" blue="0.7105262875556946" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.33000001311302185" green="0.33000001311302185" blue="0.33000001311302185" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+            <Text fx:id="contador" layoutX="536.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25" textAlignment="CENTER" wrappingWidth="60.0">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Text>
+            <GridPane alignment="CENTER" layoutX="606.0" layoutY="576.0" prefHeight="61.0" prefWidth="500.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="apuestaAmarillo" mnemonicParsing="false" onAction="#apuestaAmarillo" prefHeight="47.0" prefWidth="85.0" style="-fx-background-color: radial-gradient(center 50% 50%, radius 100%, #B9B83E, #6D6C04);" styleClass="botonesApuestas" text="X2" />
+                  <Button fx:id="apuestaVerde" mnemonicParsing="false" onAction="#apuestaVerde" prefHeight="46.0" prefWidth="85.0" style="-fx-background-color: radial-gradient(center 50% 50%, radius 100%, #5B9C35, #215602);" styleClass="botonesApuestas" text="X4" GridPane.columnIndex="1" />
+                  <Button fx:id="apuestaRojo" mnemonicParsing="false" onAction="#apuestaRojo" prefHeight="46.0" prefWidth="85.0" style="-fx-background-color: radial-gradient(center 50% 50%, radius 100%, AA3939, #550000);;" styleClass="botonesApuestas" text="x21" GridPane.columnIndex="2" />
+                  <Button fx:id="apuestaAzul" mnemonicParsing="false" onAction="#apuestaAzul" prefHeight="77.0" prefWidth="85.0" style="-fx-background-color: radial-gradient(center 50% 50%, radius 100%, #393881, #110D4C);" styleClass="botonesApuestas" text="x6" GridPane.columnIndex="3" />
+                  <Button fx:id="apuestaMorado" mnemonicParsing="false" onAction="#apuestaMorado" prefHeight="72.0" prefWidth="85.0" style="-fx-background-color: radial-gradient(center 50% 50%, radius 100%, #762979, #450347);" styleClass="botonesApuestas" text="x11" GridPane.columnIndex="4" />
+                  <Label fx:id="infoApuestaAmarillo" style="-fx-text-fill: green;" styleClass="labelInformacionUsuario" text="Label" GridPane.rowIndex="1" />
+                  <Label fx:id="infoApuestaVerde" style="-fx-text-fill: green;" styleClass="labelInformacionUsuario" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="infoApuestaRojo" style="-fx-text-fill: green;" styleClass="labelInformacionUsuario" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label fx:id="infoApuestaAzul" style="-fx-text-fill: green;" styleClass="labelInformacionUsuario" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label fx:id="infoApuestaMorado" style="-fx-text-fill: green;" styleClass="labelInformacionUsuario" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="25.0" layoutY="575.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="textoApuesta" promptText="Apuesta" styleClass="textApuesta" />
+                  <Button fx:id="botonMasUno" mnemonicParsing="false" onAction="#sumarUno" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9C9C9C; -fx-text-fill: white;" text="+1" GridPane.columnIndex="1" />
+                  <Button fx:id="botonMasDiez" mnemonicParsing="false" onAction="#sumarDiez" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9C9C9C; -fx-text-fill: white;" text="+10" GridPane.columnIndex="2" />
+                  <Button fx:id="botonMasVeinte" mnemonicParsing="false" onAction="#sumarVeintiCinco" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9C9C9C; -fx-text-fill: white;" text="+25" GridPane.columnIndex="3" />
+                  <Button fx:id="botonMasCincuenta" mnemonicParsing="false" onAction="#sumarCincuenta" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9C9C9C; -fx-text-fill: white;" text="+50" GridPane.columnIndex="4" />
+               </children>
+            </GridPane>
+            <TableView fx:id="tabla" disable="true" layoutX="941.0" layoutY="79.0" prefHeight="473.0" prefWidth="168.0">
+              <columns>
+                <TableColumn fx:id="tablaColores" prefWidth="118.0" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Label alignment="CENTER" layoutX="941.0" layoutY="85.0" prefHeight="15.0" prefWidth="168.0" styleClass="labelInformacionUsuario" text="COLORES ANTERIORES" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="ocultarMensaje" arcHeight="5.0" arcWidth="5.0" fill="#161616" height="25.0" layoutX="963.0" layoutY="312.0" stroke="TRANSPARENT" strokeType="INSIDE" width="119.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="panelBlackJack" layoutX="168.0" layoutY="56.0" prefHeight="644.0" prefWidth="1132.0">
+         <children>
+            <Label layoutX="383.0" layoutY="295.0" text="PROXIMAMENTE..." textFill="#838383">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Pane prefHeight="56.0" prefWidth="1300.0" styleClass="barraSuperior_juego">
+         <children>
+            <Button fx:id="botonCerrar" alignment="CENTER" layoutX="1267.0" mnemonicParsing="false" onAction="#cerrarApp" prefHeight="0.0" prefWidth="33.0" style="-fx-background-radius: 0 10 0 0;" styleClass="CerrarApp" text="X" />
+            <Button fx:id="botonMinimizar" layoutX="1234.0" mnemonicParsing="false" onAction="#minimizarApp" prefHeight="15.0" prefWidth="33.0" styleClass="MinimizarApp" text="-" />
+            <Label layoutX="14.0" layoutY="-1.0" prefHeight="56.0" prefWidth="40.0" styleClass="Titulo" text="J" />
+            <GridPane hgap="10.0" layoutX="1019.0" layoutY="11.0" prefHeight="34.0" prefWidth="200.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label styleClass="labelInformacionUsuario" text="FICHAS:" />
+                  <Label fx:id="fichasUsuario" styleClass="labelInformacionUsuario" text="Label" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <Label fx:id="ganancias" alignment="CENTER" layoutX="1172.0" layoutY="20.0" style="-fx-text-fill: green;" styleClass="labelInformacionUsuario" text="Label" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Pane layoutY="56.0" prefHeight="644.0" prefWidth="168.0">
+         <children>
+            <AnchorPane layoutY="19.0" minHeight="56.0" prefHeight="56.0" prefWidth="168.0">
+               <children>
+                  <Pane fx:id="paneSuperiorR" prefHeight="200.0" prefWidth="150.0" styleClass="barraInferior_juego" />
+                  <Pane fx:id="paneInferiorR" layoutY="60.0" prefHeight="200.0" prefWidth="150.0" styleClass="barraInferior_juego" />
+                  <Button fx:id="ruleta" contentDisplay="CENTER" minHeight="56.0" minWidth="168.0" mnemonicParsing="false" onAction="#fijarMenuRuleta" prefHeight="56.0" prefWidth="168.0" styleClass="GameButtons">
+                     <graphic>
+                        <GridPane minHeight="60.0" minWidth="168.0" prefHeight="60.0" prefWidth="168.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="144.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagenes/ruleta.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="labelR" fx:id="labelR" text="RULETA" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="80.0" prefHeight="56.0" prefWidth="168.0">
+               <children>
+                  <Pane fx:id="paneSuperiorB" prefHeight="200.0" prefWidth="150.0" styleClass="barraInferior_juego" />
+                  <Pane fx:id="paneInferiorB" layoutY="60.0" prefHeight="200.0" prefWidth="150.0" styleClass="barraInferior_juego" />
+                  <Button fx:id="blackJack" contentDisplay="CENTER" minHeight="56.0" minWidth="168.0" mnemonicParsing="false" onAction="#fijarMenuBlackJack" prefHeight="56.0" prefWidth="168.0" styleClass="GameButtons">
+                     <graphic>
+                        <GridPane minHeight="56.0" minWidth="168.0" prefHeight="56.0" prefWidth="168.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="144.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagenes/blackjack.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="labelB" fx:id="labelB" text="BLACK JACK" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="583.0" prefHeight="56.0" prefWidth="168.0">
+               <children>
+                  <Pane fx:id="paneSuperiorP" prefHeight="200.0" prefWidth="150.0" styleClass="barraInferior_juego" />
+                  <Button fx:id="perfil" contentDisplay="CENTER" minHeight="56.0" minWidth="168.0" mnemonicParsing="false" onAction="#fijarMenuPerfil" prefHeight="56.0" prefWidth="168.0" styleClass="GameButtons">
+                     <graphic>
+                        <GridPane minHeight="56.0" minWidth="168.0" prefHeight="56.0" prefWidth="168.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="144.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagenes/avatar%20(1).png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="labelB" fx:id="labelB1" text="PERFIL" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane layoutX="168.0" layoutY="56.0" prefHeight="644.0" prefWidth="1.0" styleClass="barraLateral_juego" />
+   </children>
+</AnchorPane>

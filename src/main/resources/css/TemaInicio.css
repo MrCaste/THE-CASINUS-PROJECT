@@ -1,0 +1,314 @@
+
+.pane-izquierdo {
+    -fx-background-color: #000000;
+    -fx-background-radius: 10 0 0 10;
+}
+
+.pane-derecho {
+    -fx-background-color: #161616;
+    -fx-background-radius: 10;
+    -fx-flex-grow: 1;
+}
+
+.rounded-login-button {
+    -fx-background-radius: 20;
+    -fx-padding: 0px;
+    -fx-border-color: transparent;
+    -fx-background-color: #161616;
+}
+
+.rounded-media-view {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+
+.transparent-button .text {
+    -fx-font-size: 12px; /* Ajusta el tamaño según tus necesidades */
+    -fx-font-family: "System";
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1;
+}
+
+.transparent-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white; 
+    -fx-font-size: 12px; 
+    -fx-background-radius: 0px;
+    -fx-padding: 0px;
+}
+
+.transparent-button:hover {
+    -fx-background-color: red;
+}
+
+.transparent-button2 {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white; 
+    -fx-font-size: 12px;
+    -fx-background-radius: 0px;
+    -fx-padding: 0px;
+}
+
+.transparent-button2:hover {
+    -fx-background-color: rgba(128, 128, 128, 0.5);
+}
+
+TextField {
+    -fx-background-color: #161616;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-prompt-size: 10px;
+}
+
+PasswordField {
+    -fx-background-color: #161616;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-prompt-size: 10px;
+}
+
+Hyperlink {
+    -fx-text-fill: #848484;
+}
+
+Hyperlink:hover {
+    -fx-text-fill: white;
+}
+
+PasswordField:hover {
+    -fx-background-color: #555555;
+}
+
+PasswordField:focused {
+    -fx-background-color: #000000;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+TextField:hover {
+    -fx-background-color: #555555;
+}
+
+TextField:focused {
+    -fx-background-color: #000000;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.textfield_login {
+    -fx-background-color: #555555;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-prompt-size: 10px;
+}
+
+.textfield_login:hover {
+    -fx-background-color: #8B8A8A;
+}
+
+.textfield_login:focused {
+    -fx-background-color: #151515;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+
+
+
+
+.barraSuperior_juego {
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #0094DC;
+    -fx-background-color: black;
+}
+
+.barraLateral_juego {
+    -fx-pref-width: 0.1px; /* Ajusta el ancho según tus necesidades */
+    -fx-background-color: linear-gradient(to bottom, transparent, #0094DC70 50%, transparent);
+}
+
+.barraInferior_juego {
+    -fx-pref-height: 1px; /* Ajusta el ancho según tus necesidades */
+    -fx-background-color: linear-gradient(to right, #0094DC70, #0094DC70 1%, transparent);
+}
+
+.GameButtons {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-border-color: transparent;
+    -fx-text-fill: #E7E7E7;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 10px;
+    -fx-background-radius: 0px;
+}
+
+.GameButtons #labelR {
+    -fx-text-fill: #E7E7E7;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 10px;
+}
+
+.GameButtons #labelB {
+    -fx-text-fill: #E7E7E7;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 10px;
+}
+
+.GameButtons:hover #labelR {
+    -fx-text-fill: #A09B8C;
+}
+
+.GameButtons:pressed #labelR {
+    -fx-text-fill: #706c61;
+}
+
+.GameButtons:hover #labelB {
+    -fx-text-fill: #A09B8C;
+}
+
+.GameButtons:pressed #labelB {
+    -fx-text-fill: #706c61;
+}
+
+.avatarButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-padding: 0px;
+    -fx-background-radius: 50%;
+}
+
+.CerrarApp {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #A09B8C;  
+    -fx-font-size: 12px; 
+    -fx-background-radius: 0px;
+    -fx-padding: 0px;
+}
+
+.CerrarApp:hover {
+    -fx-text-fill: white;
+}
+
+.CerrarApp .text {
+    -fx-font-size: 12px; /* Ajusta el tamaño según tus necesidades */
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1;
+}
+
+.MinimizarApp {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #A09B8C; 
+    -fx-font-size: 12px;
+    -fx-background-radius: 0px;
+    -fx-padding: 0px;
+}
+
+.MinimizarApp:hover {
+    -fx-text-fill: white;
+}
+
+.Titulo {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-border-color: transparent;
+    -fx-text-fill: #E7E7E7;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 30px;
+    -fx-background-radius: 0px;
+    -fx-text-fill: linear-gradient(to bottom, red, red 1%, transparent);
+}
+
+.Titulo .text {
+    -fx-scale-y: 1.5;
+    -fx-scale-x: 1.5;
+}
+
+.degradadoFondo {
+    -fx-background-color: linear-gradient(to top, black, black 1%, #151515);
+}
+
+.labelInformacionUsuario {
+    -fx-text-fill: #E7E7E7;
+    -fx-font-family: "Arial Black"; 
+    -fx-font-size: 10px;
+}
+
+.progress-bar {
+    -fx-padding: 1;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #161616;
+    -fx-background-insets: 1; 
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: #8B8A8A;
+    -fx-background-radius: 20;
+}
+
+.botonesApuestas {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white; 
+    -fx-font-size: 12px; 
+    -fx-background-radius: 0px;
+    -fx-padding: 0px;
+}
+
+.textApuesta {
+    -fx-font-size: 14px;
+    -fx-background-color: #151515;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+
+}
+
+.table-view .filler {
+    -fx-background-color: transparent; 
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Black";
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .empty-message {
+    -fx-text-fill: transparent;
+}
+
+
