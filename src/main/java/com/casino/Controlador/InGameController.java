@@ -224,7 +224,7 @@ public class InGameController implements Initializable{
         inicializarErroresYComponentes();
         inicializarLineas();
         inicializarPanelesJuegos();
-        inicializarRueleta();
+        inicializarRuleta();
         tareaAnimacion();  
     }
 
@@ -452,7 +452,7 @@ public class InGameController implements Initializable{
      * al contenedor {@code panelRuleta}, y llama al método {@code inicializarRueda()} para configurar 
      * la ruleta.</p>
     */
-    public void inicializarRueleta() {
+    public void inicializarRuleta() {
         Rueda ruleta = new Rueda();
         panelRuleta.getChildren().addAll(Rueda.getRueda());
         ruleta.inicializarRueda();
