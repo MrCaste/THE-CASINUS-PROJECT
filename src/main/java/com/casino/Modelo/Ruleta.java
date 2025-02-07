@@ -1,6 +1,4 @@
 package com.casino.Modelo;
-
-import com.casino.Controlador.InicioController;
 import com.casino.Vista.AnimacionRueda;
 
 import javafx.application.Platform;
@@ -33,7 +31,7 @@ public class Ruleta extends Juegos{
     */
     @Override
     public void Ganar(Usuario usuario, Label label) {
-        calcularVictoria(InicioController.getUsuarioSesion(), AnimacionRueda.getNumero(), apuestas, label);
+        calcularVictoria(usuario, AnimacionRueda.getNumero(), apuestas, label);
     }
 
     /**
